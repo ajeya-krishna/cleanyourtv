@@ -21,6 +21,8 @@
         <item>com.amazon.amazonvideo.livingroom</item>
         <item>com.google.android.youtube.tv</item>
         <item>in.startv.hotstar</item>
+        <item>com.google.android.youtube.tvmusic</item>
+        <item>com.jio.media.stb.ondemand</item>
     </string-array>
     <!-- With fewer dock_apps than columns (or a dock app that is not installed), the free dock slots take
          the first grid apps, so the dock never shows a gap. false leaves them empty (#162); a theme can
@@ -266,7 +268,7 @@
 
     <!-- Tiles per row in the grid; the dock always has this many slots. Tiles are 180dp wide at 4 columns and
          shrink to fit from 5 up (about 144dp at 5, 117dp at 6 on a 1080p TV). -->
-    <integer name="columns">4</integer>
+    <integer name="columns">6</integer>
 
     <!-- Basic motion is on; advanced effects are opt-in in the launcher's own Settings screen. -->
     <bool name="animations">true</bool>
@@ -299,7 +301,7 @@
          slides with no bounce and settles within 5 frames, every animation lasts 90 ms or less, names, top
          shelf, glow and highlight appear instead of fading, and there is no tile entrance. Set it
          here or with "reduced_motion": true in a theme's config.json; false keeps the normal motion. -->
-    <bool name="reduced_motion">false</bool>
+    <bool name="reduced_motion">true</bool>
 
     <!-- The glass highlight springs past the tile it moves to and the focused tile zooms past its size
          before settling. false: both go straight there, with no bounce, while scrolling stays smooth
